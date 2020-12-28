@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Todo List</title>
+    <link
+    rel="stylesheet"
+    href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.8.2/css/all.min.css"
+  />
+    <style>
+        body{
+            box-sizing: border-box;
+            width:400px;
+            margin:0 auto;
+        }
+
+        ul{
+            list-style: none;
+        }
+
+        input[type=text]{
+            border-style: none;
+            width: 350px;
+            border-bottom: solid black 1px;
+            
+        }
+        
+        button{
+            color:blueviolet;
+            border-style: none;
+            background-color: white;
+        }
+        ul{
+            padding-left: 10px;
+        }
+        li{
+            position: relative;
+        }
+        li button{
+            position:absolute;
+            top:auto;
+            right:3px;
+        }
+
+        input[type="checkebox"]:checked{
+            text-decoration: line-through;
+        }
+
+        
+    </style>
+</head>
+<body>
+    <h1>Todo List</h1>
+    <div>
+        <input class="text" type="text" value="">
+        <button>
+            <i class="fas fa-plus"></i>
+        </button>
+    </div>
+    <ul>
+        <!--
+            <li><input type="checkbox" checked>할일1 
+            <button>
+                <i class="fas fa-trash"></i>
+            </button>
+        </li> 
+        <li><input type="checkbox">할일2
+            <button>
+                <i class="fas fa-trash"></i>
+            </button>
+        </li>  -->
+    </ul>
+    <script src="js/main.js"></script>
+</body>
+</html>
